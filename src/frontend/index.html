@@ -1,1 +1,183 @@
-<h1>Teste</h1>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="logo">🏠</div>
+        <nav>
+            <ul>
+                <li>🏠</li>
+                <li>🔔</li>
+                <li>⚙</li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Conteúdo principal -->
+    <main class="container">
+
+        <!-- Header -->
+        <header class="header">
+            <div>
+                <h2>Hello, User</h2>
+                <p>Name</p>
+            </div>
+            <div class="profile">👤</div>
+        </header>
+
+        <!-- Saldo -->
+        <section class="balance-box">
+            <h1>R$ 000.000,00</h1>
+            <button id="openModal">+</button>
+        </section>
+
+        <!-- Gráficos -->
+        <section class="charts">
+
+            <div class="card">
+                <h3>Resumo Financeiro</h3>
+                <div class="chart-placeholder">
+                    Gráfico Pizza
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Evolução Mensal</h3>
+                <div class="chart-placeholder">
+                    Gráfico Barras
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Categorias -->
+        <section class="categories">
+
+            <div class="category mercado">
+                <h4>Mercado</h4>
+                <p>R$ 000,00</p>
+            </div>
+
+            <div class="category energia">
+                <h4>Energia</h4>
+                <p>R$ 000,00</p>
+            </div>
+
+            <div class="category agua">
+                <h4>Água</h4>
+                <p>R$ 000,00</p>
+            </div>
+
+            <div class="limit-box">
+                <h4>Limite</h4>
+                <p>R$ 000,00</p>
+            </div>
+
+        </section>
+
+        <!-- Tabela -->
+        <section class="transactions">
+            <h2>Transações</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Categoria</th>
+                        <th>Tipo</th>
+                        <th>Data</th>
+                        <th>Valor</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Mercado pão de açúcar</td>
+                        <td>Mercado</td>
+                        <td>Despesa</td>
+                        <td>00/00/0000</td>
+                        <td>-R$ 000,00</td>
+                        <td>✏ 🗑</td>
+                    </tr>
+
+                    <tr>
+                        <td>Conta de luz</td>
+                        <td>Energia</td>
+                        <td>Despesa</td>
+                        <td>00/00/0000</td>
+                        <td>-R$ 000,00</td>
+                        <td>✏ 🗑</td>
+                    </tr>
+
+                    <tr>
+                        <td>Salário</td>
+                        <td>Outros</td>
+                        <td>Receita</td>
+                        <td>00/00/0000</td>
+                        <td>R$ 000,00</td>
+                        <td>✏ 🗑</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <!-- Modal Nova Transação -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+
+            <span class="close">&times;</span>
+
+            <h2>Nova transação</h2>
+
+            <form>
+
+                <label>Tipo</label>
+                <select>
+                    <option>Selecione o tipo</option>
+                    <option>Receita</option>
+                    <option>Despesa</option>
+                </select>
+
+                <label>Nome</label>
+                <input type="text" placeholder="Ex: salário, aluguel...">
+
+                <label>Valor</label>
+                <input type="number" placeholder="R$ 0,00">
+
+                <label>Data</label>
+                <input type="date">
+
+                <label>Categoria</label>
+                <select>
+                    <option>Selecione uma categoria</option>
+                    <option>Mercado</option>
+                    <option>Energia</option>
+                    <option>Água</option>
+                </select>
+
+                <label>Descrição</label>
+                <input type="text" placeholder="Adicione uma descrição">
+
+                <div class="buttons">
+                    <button type="button">Cancelar</button>
+                    <button type="submit">Salvar</button>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
