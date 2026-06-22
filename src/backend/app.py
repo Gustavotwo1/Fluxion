@@ -25,4 +25,5 @@ def delete_transaction(index):
         transactions.pop(index)
     return jsonify({"ok": True})
 
-app.run(debug=True)
+if __name__ == "__main__":
+    app.run(debug=True)
