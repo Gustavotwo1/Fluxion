@@ -196,23 +196,23 @@
             <form>
 
                 <label>Tipo</label>
-                <select>
+                <select id = "tipo">
                     <option>Selecione o tipo</option>
                     <option>Receita</option>
                     <option>Despesa</option>
                 </select>
 
                 <label>Nome</label>
-                <input type="text" placeholder="Ex: salário, aluguel">
+                <input type="text" placeholder="Ex: salário, aluguel" id="nome">
 
                 <label>Valor</label>
-                <input type="number" placeholder="R$ 0,00">
+                <input type="text" placeholder="R$ 0,00" id="valor">
 
                 <label>Data</label>
-                <input type="date">
+                <input type="date" id="data">
 
                 <label>Categoria</label>
-                <select>
+                <select id="categoria">
                     <option>Selecione uma categoria</option>
                     <option>Mercado</option>
                     <option>Energia</option>
@@ -233,6 +233,7 @@
 
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
